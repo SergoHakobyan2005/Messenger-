@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messenger</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+  <section class="all">
+
+    <!-- HEADER START -->
+
+    <header>
+      <div class="logo_block">
+        <i class="fab fa-facebook-messenger"></i>
+      </div>
+      <div class="navigator">
+        <i data-id="1" class="nav_1 nav_js far fa-comment-alt active_nav"></i>
+        <i data-id="2" class="nav_2 nav_js fas fa-phone-alt"></i>
+        <i data-id="3" class="nav_3 nav_js fas fa-user-friends"></i>
+        <i data-id="3" class="nav_4 nav_js far fa-user-circle"></i>
+      </div>
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- MODAL BLOCK -->
+
+    <div class="notification_modal">
+      <div class="modal_content">
+        <div class="title">
+          <div class="name">Notifications</div>
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="notific_section">
+          <div class="notific_part_1 notific_part">
+            <div class="text_block">
+              <div class="icon">
+                <i class="fas fa-user-plus"></i>
+              </div>
+              <div class="text">
+                <span class="n1">Catherine richardson </span><span class="n2">send you a friend
+                  request</span>
+                <p class="n3">5 mins ago</p>
+              </div>
+            </div>
+            <div class="button_block">
+              <div class="reject">Reject</div>
+              <div class="accept">Accept</div>
+            </div>
+          </div>
+          <div class="notific_part_2 notific_part">
+            <div class="text_block">
+              <div class="icon">
+                <i class="far fa-check-circle"></i>
+              </div>
+              <div class="text">
+                <span class="n1">Katelyn Valdez </span><span class="n2">accepted your friend
+                  request</span>
+                <p class="n3">25 mins ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="notific_part_3 notific_part">
+            <div class="text_block">
+              <div class="icon">
+                <i class="far fa-image"></i>
+              </div>
+              <div class="text">
+                <span class="n1">Eva Walker </span><span class="n2">updated profile
+                  picture</span>
+                <p class="n3">5 mins ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="notific_part_4 notific_part">
+            <div class="text_block">
+              <div class="icon">
+                <i class="far fa-check-circle"></i>
+              </div>
+              <div class="text">
+                <span class="n1">Bonnie Torres </span><span class="n2">accepted your friend
+                  request</span>
+                <p class="n3">5 mins ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="notific_part_5 notific_part">
+            <div class="text_block">
+              <div class="icon">
+                <i class="far fa-image"></i>
+              </div>
+              <div class="text">
+                <span class="n1">Christopher Garcia </span><span class="n2">updated profile
+                  picture</span>
+                <p class="n3">5 mins ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clear_part">
+          <a class="clear">Clear all</a>
+        </div>
+      </div>
+    </div>
+    <div class="settings_modal">
+      <div class="settings_modal_content">
+        <div class="title">
+          <div class="name">New Chat</div>
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="new_chat_section">
+          <div class="search_part">
+            <input class="new_chat_search" placeholder="Search" type="text">
+          </div>
+          <div class="text_block text_block_1">
+            <div class="status_1"></div>
+            <div class="image"></div>
+            <div class="text">
+              <span class="nm1">Catherine Richardson</span>
+              <p class="status3">Online</p>
+            </div>
+          </div>
+          <div class="text_block text_block_2">
+            <div class="status_1"></div>
+            <div class="image"></div>
+            <div class="text">
+              <span class="nm1">Katherine Schneider</span>
+              <p class="status3">Online</p>
+            </div>
+          </div>
+          <div class="text_block text_block_3">
+            <div class="status_5"></div>
+            <div class="image"></div>
+            <div class="text">
+              <span class="nm1">Brittany K. Williams</span>
+              <p class="status3">Offline</p>
+            </div>
+          </div>
+          <div class="text_block text_block_4">
+            <div class="status_4"></div>
+            <div class="image"></div>
+            <div class="text">
+              <span class="nm1">Christina Turner</span>
+              <p class="status3">Busy</p>
+            </div>
+          </div>
+          <div class="text_block text_block_5">
+            <div class="status_8"></div>
+            <div class="image"></div>
+            <div class="text">
+              <span class="nm1">Annie Richardson</span>
+              <p class="status3">Away</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="invites_modal">
+      <div class="invites_modal_content">
+        <div class="title">
+          <div class="name">Invite Others</div>
+          <div class="close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="emailAndMessege_part">
+          <div class="email_block">
+            <div class="title_email">Email address</div>
+            <input placeholder="Type email address here" class="email_input" type="email">
+          </div>
+          <div class="messege">
+            <div class="title_messege">Invitation message</div>
+            <textarea placeholder="Write your message here" class="messege_text" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="close_send">
+          <a class="invite_close">Close</a>
+          <div class="send_invite">Send Invitation</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL BLOCK -->
+
+    <!-- CHAT LIST START -->
+
+    <section data-id="1" class="chat_js chats active_chats">
+      <div class="settings_block">
+        <div class="part_top">
+          <div class="title">Chats</div>
+          <div class="icon_block">
+            <i class="far fa-bell"></i>
+            <i class="fas fa-ellipsis-v"></i>
+            <div class="dropdown">
+              <div class="all_drop new_chat">New Chat</div>
+              <div class="all_drop invite_others">Invite Others</div>
+            </div>
+          </div>
+        </div>
+        <div class="part_bottom">
+          <button class="button">All Chats</button>
+          <div class="dropdown">
+            <div class="all_drop all_chats">All Chats</div>
+            <div class="drop_all_filter all_drop friends">Friends</div>
+            <div class="drop_all_filter all_drop groups">Groups</div>
+            <div class="drop_all_filter all_drop unread">Unread</div>
+            <div class="drop_all_filter all_drop archived">Archived</div>
+          </div>
+          <div class="box">
+            <input class="chat_search" placeholder="Search users" type="text">
+            <div class="search">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="people_block">
+        <div class=" con2 contact_block_2 contact_block fri c1">
+          <div class="status_1"></div>
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/2.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Catherine Richardson</div>
+              <div class=" data_js data">Just now</div>
+            </div>
+            <div class="sms_block">
+              <div class=" sms_js sms">I’m sorry, I didn’t catch that. Could you please repeat?</div>
+            </div>
+          </div>
+        </div>
+        <div class="con2 contact_block_2 contact_block group c2">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/6525a08f1df98a2e3a545fe2ace4be47.jpg">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Themeforest Group</div>
+              <div class="data_js data">10:20 pm</div>
+            </div>
+            <div class="sms_block">
+              <div class="sms_js sms"><span>Jeny: </span>That’s pretty common. I heard that a lot of people had the same
+                experience.</div>
+              <i class="fas fa-lock"></i>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block_2 contact_block unr fri c3">
+          <div class="status_2"></div>
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/5.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Eva Walker</div>
+              <div class="data">09:36 am</div>
+            </div>
+            <div class="sms_block">
+              <div class="sms">You’re kidding! I drive a motorcycle as well. What type of bike do you have?
+              </div>
+              <div class="unread_sms">2</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block_2 contact_block fri c4">
+          <div class="status_3"></div>
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/Anonymous-Profile-Picture-1024x1024.jpg">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Christopher Garcia</div>
+              <div class="data">Yesterday</div>
+            </div>
+            <div class="sms_block">
+              <i class="fas fa-image"></i>
+              <div class="sms">Photo</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block_2 contact_block unr c5">
+          <div class="status_4"></div>
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/1.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Christina Turner</div>
+              <div class="data">31/05/20</div>
+            </div>
+            <div class="sms_block">
+              <div class="sms">I’m working hard in Maths, Physics and Chemistry. I have planning to appear in I.I.T.
+                after XII.</div>
+              <div class="unread_sms">10</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block_2 contact_block fri c6">
+          <div class="status_5"></div>
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/images (1).jpg">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Tammy Martinez</div>
+              <div class="data">24/04/20</div>
+            </div>
+            <div class="sms_block">
+              <i class="fas fa-file-powerpoint"></i>
+              <div class="sms">project_guidelines.docs</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block_2 contact_block fri c7">
+          <div class="status_6"></div>
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Bonnie Torres</div>
+              <div class="data">20/04/20</div>
+            </div>
+            <div class="sms_block volume_mute">
+              <div class="sms">Catch you later! Bye-bye!</div>
+              <i class="fas fa-volume-mute"></i>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block_2 contact_block fri c8">
+          <div class="status_7"></div>
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;"
+              src="img/depositphotos_28850541-stock-illustration-male-default-profile-picture.jpg">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Jacqueline James</div>
+              <div class="data">15/02/20</div>
+            </div>
+            <div class="sms_block">
+              <i class="fas fa-phone-alt"></i>
+              <div class="sms">Missed call</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block_2 contact_block arch c9">
+          <div class="status_8"></div>
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/4.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Annie Richardson</div>
+              <div class="data">26/12/19</div>
+            </div>
+            <div class="sms_block">
+              <div class="sms">I think I have everything I need, thank you!</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block_2 contact_block c10">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;"
+              src="img/220px-Souvenir_silhouette_post_card._Toledo's_greatest_store;_Tiedtke's._The_store_for_all_the_people_-_DPLA_-_f00a78fe61c216236a13cdebf588d3c3_(page_1).jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAT LIST END -->
+
+    <!-- CHAT LIST 2 START -->
+
+    <section data-id="2" class="chat_js chats_2 chats">
+      <div class="settings_block">
+        <div class="part_top">
+          <div class="title">Calls</div>
+          <div class="icon_block">
+            <i class="far fa-bell"></i>
+            <i class="fas fa-ellipsis-v"></i>
+            <div class="dropdown">
+              <div class="all_drop new_chat">New Chat</div>
+              <div class="all_drop invite_others">Invite Others</div>
+            </div>
+          </div>
+        </div>
+        <div class="part_bottom">
+          <button class="button_chat_2 button">All Chats</button>
+          <div class="dropdown_chat_2 dropdown">
+            <div class="all_drop all_chats">All Chats</div>
+            <div class="all_drop friends">Friends</div>
+            <div class="all_drop groups">Groups</div>
+            <div class="all_drop unread">Unread</div>
+            <div class="all_drop archived">Archived</div>
+          </div>
+          <div class="box">
+            <input class="chat_search" placeholder="Search users" type="text">
+            <div class="search">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="people_block">
+        <div class="contact_block c1">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/2.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Catherine Richardson</div>
+            </div>
+            <div class="sms_block">
+              <i style="color: white;" class="fa-solid fa-phone-volume"></i>
+              <div class="sms">Just now</div>
+            </div>
+          </div>
+          <i style="color: white;" class="fa-solid fa-phone-flip"></i>
+        </div>
+        <div style="background: none;" class="contact_block c3">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/5.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Eva Walker</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="sms">5 mins ago</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-phone-flip"></i>
+        </div>
+        <div class="contact_block c4">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/Anonymous-Profile-Picture-1024x1024.jpg">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Christopher Garcia</div>
+            </div>
+            <div class="sms_block">
+              <i style="color: #FF337C;" class="fa-solid fa-phone-volume"></i>
+              <div style="color: #FF337C;" class="sms">20 mins ago</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-phone-flip"></i>
+        </div>
+        <div style="background: none;" class="contact_block c5">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/1.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Christina Turner</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="sms">4 hour ago</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-phone-flip"></i>
+        </div>
+        <div class="contact_block c6">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/images (1).jpg">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Tammy Martinez</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="sms">Yesterday</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-phone-flip"></i>
+        </div>
+        <div class="contact_block c7">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Bonnie Torres</div>
+            </div>
+            <div style="justify-content: flex-start;" class="sms_block volume_mute">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="sms">12/06/2020</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-phone-flip"></i>
+        </div>
+        <div class="contact_block c8">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;"
+              src="img/depositphotos_28850541-stock-illustration-male-default-profile-picture.jpg">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Jacqueline James</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="sms">16/05/2020</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-phone-flip"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAT LIST 2 END -->
+
+    <!-- CHAT LIST 3 START -->
+
+    <section data-id="3" class="chat_js chats_3 chats_2 chats">
+      <div class="settings_block">
+        <div class="part_top">
+          <div class="title">Friends</div>
+          <div class="icon_block">
+            <i class="far fa-bell"></i>
+            <i class="fas fa-ellipsis-v"></i>
+            <div class="dropdown">
+              <div class="all_drop new_chat">New Chat</div>
+              <div class="all_drop invite_others">Invite Others</div>
+            </div>
+          </div>
+        </div>
+        <div class="part_bottom">
+          <button class="button">All Chats</button>
+          <div class="dropdown">
+            <div class="all_drop all_chats">All Chats</div>
+            <div class="all_drop friends">Friends</div>
+            <div class="all_drop groups">Groups</div>
+            <div class="all_drop unread">Unread</div>
+            <div class="all_drop archived">Archived</div>
+          </div>
+          <div class="box">
+            <input class="chat_search" placeholder="Search users" type="text">
+            <div class="search">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="people_block">
+        <p>A</p>
+        <div class="contact_block c1">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Alice Redlips</div>
+            </div>
+            <div class="sms_block">
+              <i style="color: white;" class="fa-solid fa-location-dot"></i>
+              <div class="sms">Las Vegas, NV</div>
+            </div>
+          </div>
+        </div>
+        <p>B</p>
+        <div class="contact_block c7">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Bonnie Torres</div>
+            </div>
+            <div style="justify-content: flex-start;" class="sms_block volume_mute">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Frederick, MD</div>
+            </div>
+          </div>
+        </div>
+        <p>C</p>
+        <div class="contact_block c4">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Christopher Garcia</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Scranton, PA</div>
+            </div>
+          </div>
+        </div>
+        <div style="background: none;" class="contact_block c5">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Christina Turner</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Riverside, CA</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block c9">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Catherine Richardson</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">San Fransisco, CA</div>
+            </div>
+          </div>
+        </div>
+        <p>E</p>
+        <div style="background: none;" class="contact_block c3">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Eva Walker</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Brentwood, NY</div>
+            </div>
+          </div>
+        </div>
+        <p>K</p>
+        <div class="contact_block c9">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Katelyn Valdez</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Saginaw, MI</div>
+            </div>
+          </div>
+        </div>
+        <p>J</p>
+        <div class="contact_block c8">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Jacqueline James</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Jackson, TN</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block c9">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Jhon Rhoades</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block c9">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">James Bond</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Los Angeles, CA</div>
+            </div>
+          </div>
+        </div>
+        <p>T</p>
+        <div class="contact_block c6">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Tammy Martinez</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Zephyr, NC</div>
+            </div>
+          </div>
+        </div>
+        <div class="contact_block c9">
+          <div class="picture_block">
+            <img style="width: 100%; height: 100%;" src="img/3.png">
+          </div>
+          <div class="name_block">
+            <div class="name_box">
+              <div class="name">Jack Wilson</div>
+            </div>
+            <div class="sms_block">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="sms">Centerville, VA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAT LIST 3 END -->
+
+    <!-- CHAT LIST 4 START -->
+
+    <section data-id="4" class="chat_js chats_4 chats_3 chats_2 chats">
+      <div class="settings_block">
+        <div class="part_top">
+          <div class="title">Profile</div>
+          <div class="title_text">Personal Information & Settings</div>
+        </div>
+      </div>
+      <div class="people_block_4 people_block">
+        <div class="user_profile">
+          <i class="user_ellipsis fas fa-ellipsis-v"></i>
+          <div class="user_dropdown dropdown">
+            <div class="all_drop all_chats">Change Profile Picture</div>
+            <div class="all_drop friends">Change Number</div>
+          </div>
+          <div class="user_img">
+            <img src="img/3.png">
+          </div>
+          <div class="user_name">Catherine Richardson</div>
+          <div class="user_logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Logout
+          </div>
+        </div>
+        <div class="user_content content_part">
+          <div class="friends_log_container call_log_container">
+            <div class="friends_log call_log_1">
+              <div class="txt_part">
+                <div class="txt_top">Local Time</div>
+                <div class="txt_bottom">10:25 PM</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_2">
+              <div class="txt_part">
+                <div class="txt_top">Birthdate</div>
+                <div class="txt_bottom">20/11/1992</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-regular fa-calendar"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_3">
+              <div class="txt_part">
+                <div class="txt_top">Phone</div>
+                <div class="txt_bottom">+01-222-364522</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_4">
+              <div class="txt_part">
+                <div class="txt_top">Email</div>
+                <div class="txt_bottom">catherine.richardson@gmail.com</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_5">
+              <div class="txt_part">
+                <div class="txt_top">Website</div>
+                <div class="txt_bottom">www.catherichardson.com</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+            </div>
+            <div style="border: none;" class="friends_log call_log_6">
+              <div class="txt_part">
+                <div class="txt_top">Address</div>
+                <div style="max-width: 80%;" class="txt_bottom">1134 Ridder Park Road, San Fransisco, CA 94851</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-solid fa-house-chimney"></i>
+              </div>
+            </div>
+          </div>
+          <div class="soc_log_container call_log_container">
+            <div class="friends_log call_log_1">
+              <div class="txt_part">
+                <div class="txt_top">Facebook</div>
+                <div class="soc_href txt_bottom">@cathe.richardson</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_2">
+              <div class="txt_part">
+                <div class="txt_top">Twitter</div>
+                <div class="soc_href txt_bottom">@cathe.richardson</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_3">
+              <div class="txt_part">
+                <div class="txt_top">Instagram</div>
+                <div class="soc_href txt_bottom">@cathe.richardson</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <div style="border-bottom: none;" class="friends_log call_log_4">
+              <div class="txt_part">
+                <div class="txt_top">Linkedin</div>
+                <div class="soc_href txt_bottom">@cathe.richardson</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAT LIST 4 END -->
+
+    <!-- MAIN START -->
+
+    <main class="active_main_2 main_1 main_js">
+      <main class="welcome_main">
+        <div class="welcome_content">
+          <div class="welcome_img"></div>
+          <div class="welcome_title">Welcome, Christina!</div>
+          <div class="welcome_subtitle">Please select a chat to Start messaging.</div>
+        </div>
+      </main>
+      <div class="inactive_main_section main_section main_section_1">
+        <div class="main_header">
+          <div class="main_info">
+            <div class="main_arrow">
+              <svg class="hw-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18">
+                </path>
+              </svg>
+            </div>
+            <div class="profile_image">
+              <div class="status_1"></div>
+              <div class="img active_img"></div>
+              <div class="img img2"></div>
+            </div>
+            <div class="contact_name">
+              <div class="name active_name">Catherine Richardson</div>
+              <div class="name">Themeforest Group</div>
+              <div class="online active_name">Online</div>
+              <div class="online">252 Participants</div>
+            </div>
+          </div>
+          <div class="main_settings">
+            <div class="main_search">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="main_call">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="main_ellipsis">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <div class="ellipsis_dropdown">
+              <div class="all_drop view_info"><i class="fas fa-exclamation-circle"></i>View Info</div>
+              <div class="all_drop mute_notifications"><i class="fas fa-volume-mute"></i>Mute Notifications
+              </div>
+              <div class="all_drop wallpaper"><i class="far fa-image"></i>Wallpaper</div>
+              <div class="all_drop archive_dropdown"><i class="fas fa-archive"></i>Archive</div>
+              <div class="all_drop dropdown_delete"><i class="far fa-trash-alt"></i>Delete</div>
+              <div class="all_drop block_access"><i class="fas fa-ban"></i>Block</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 0px;" class="main_search_part">
+          <div class="search_main">
+            <input class="search_input" type="text" placeholder="Search">
+            <div class="search">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+        <div class="main_container main_container_1 active_main">
+          <div class="main_data">
+            <span>Yesterday</span>
+          </div>
+          <div class="contact_main_1">
+            <div id="img"></div>
+            <div id="text-data">
+              <div id="text">I have to give a presentation on global warming on Friday, and I am so nervous.
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2">
+            <div id="text-data">
+              <div id="text">
+                First of all, you need to understand the subject matter thoroughly. You need to know whatis global
+                warming, what causes global warming, and what people should do to abate the effects of global warming.
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+          <div class="contact_main_1 contact_main_3">
+            <div id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                I have done a lot of research on the subject, and I know I can answer any questions I will receive from
+                the audience.
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_1">
+            <div id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                I should talk about more precisely the sequence of my presentation?
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2 contact_main_4">
+            <div id="text-data">
+              <div id="text">
+                Yes, what you should present first, second and third…
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+          <div class="contact_main_1 contact_main_5">
+            <div id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                If that is the case, then I already have an outline. To make it easy for my audience to follow the
+                presentation, I intend to post the outline on the board at all time during my speech.
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2 contact_main_6">
+            <div id="text-data">
+              <div id="text">
+                Good idea! By the way, do you have any facts to back you up? For example, change of climate, yearly
+                disasters…
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+          <div class="contact_main_1 contact_main_7">
+            <div id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                No, I have not thought about that. I better get some statistics from the Internet. I should not have any
+                problems since the Internet has all kinds of data.
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2 contact_main_8">
+            <div id="text-data">
+              <div id="text">
+                Pictures will keep your audience from being bored. In order for you to succeed, you need to keep them
+                interested and involved.
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+          <div class="contact_main_1 contact_main_9">
+            <div id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                You are absolutely right. I will take time to practice and to learn to relax and express myself really
+                well. Wish me luck, Catherine!
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2 contact_main_10">
+            <div id="text-data">
+              <div id="text">
+                I know you. You can do it. Good luck, Jennifer!
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+        </div>
+        <div class="main_container main_container_2">
+          <div class="main_data">
+            <span>Today</span>
+          </div>
+          <div class="contact_main_1">
+            <div class="img_one" id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                <div id="name">Brittany Williams</div>
+                Wow! Today is October 30th! Halloween is tomorrow already! Have you decided what you will be dressing up
+                for Halloween yet, Sara?
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2">
+            <div id="text-data">
+              <div id="text">
+                I’m not sure what I want to be yet. I want to be either a butterfly or a pumpkin. But why do we dress up
+                for Halloween?
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+          <div class="contact_main_1 contact_main_3">
+            <div class="img_two" id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                <div id="name">Jacqueline James</div>
+                Halloween is a festival for children, and costumes make it more special. I think we have much more fun
+                going from house to house asking for candies (trick-or- treating) after sunset dressed in our favourite
+                costumes.
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2 contact_main_4">
+            <div id="text-data">
+              <div id="text">
+                I want to be Batman! I like wearing the cape and the mask. I think you should be a butterfly. You are so
+                much shorter than me, and dressed in a pumpkin costume, someone might think you really are one and try
+                to make a pie out of you.
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+          <div class="contact_main_1 contact_main_5">
+            <div class="img_three" id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                <div id="name">Annie Richardson</div>
+                How could anyone mistake me for a real pumpkin? Real pumpkins do not have a head or arms or legs. But I
+                suppose I will be a butterfly anyway. I can have pretty wings.
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2 contact_main_6">
+            <div id="text-data">
+              <div id="text">
+                Great! So you will be a butterfly and I will be Batman. Let’s go ask Mom if we can go trick-or-treating
+                tomorrow night by ourselves. Although you are still young, I think I am old enough to watch over the
+                both of us.
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+          <div class="contact_main_1 contact_main_7">
+            <div class="img_four" id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                <div id="name">Katherine Schneider</div>
+                OK, let’s go ask mom!
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2 contact_main_8">
+            <div id="text-data">
+              <div id="text">
+                MOM! Can Sara and I go trick-or-treating by ourselves tomorrow? I can watch over Sara and make sure she
+                stays out of trouble.
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+          <div class="contact_main_1 contact_main_9">
+            <div class="img_five" id="img"></div>
+            <div id="text-data">
+              <div id="text">
+                <div id="name">Gemma Mendez</div>
+                Yes, Mom. If we go by ourselves, then you can stay home and relax. You will not have to get cold waiting
+                for us.
+              </div>
+              <div id="data">9:12am<i
+                  style="cursor: pointer; margin-left: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i></div>
+            </div>
+          </div>
+          <div class="contact_main_2 contact_main_10">
+            <div id="text-data">
+              <div id="text">
+                Thank you for offering, Patrick. However, I will be worried and I will not be able to relax if you and
+                your brother go by yourselves while I stay home. Let me ask Christine or Ian if one of them can go with
+                both of you. Then I can stay home and relax.
+                Christine! Ian!
+              </div>
+              <div style="margin-right: 10px; display: flex; justify-content: flex-end;" id="data"><i
+                  style="cursor: pointer; margin-right: 10px; position: relative; top: 1.7px; font-size: 15px;"
+                  class="fas fa-ellipsis-h"></i>9:12am</div>
+            </div>
+          </div>
+        </div>
+        <div class="message_part">
+          <div class="message_add_dropdown">
+            <div class="all_drop"><i style="margin-right: 11px;" class="far fa-image"></i>Gallery</div>
+            <div class="all_drop"><i style="font-size: 12px; margin-right: 8px;" class="fas fa-volume-up"></i>Audio
+            </div>
+            <div class="all_drop"><i style="margin-right: 12px;" class="far fa-file"></i>Document</div>
+            <div class="all_drop"><i style="margin-right: 9px;" class="far fa-user-circle"></i>Contact</div>
+            <div class="all_drop"><i style="margin-right: 12px;" class="fas fa-map-marker-alt"></i>Location
+            </div>
+            <div class="all_drop"><i style="margin-right: 10px;" class="fas fa-poll"></i>Poll</div>
+          </div>
+          <i class="far fa-plus-square"></i>
+          <input type="text" placeholder="Type your message here..." class="type_text">
+          <div class="smile">
+            <i class="far fa-smile"></i>
+          </div>
+          <div class="send">
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFO SECTION START -->
+
+      <section class="info_section">
+        <div class="title_block">
+          <p>Profile Details</p>
+          <div class="info_close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="res">
+          <div class="image_info">
+            <div class="img_info">
+              <img src="img/2.png">
+            </div>
+            <div class="info_name">Catherine Richardson</div>
+            <div class="info_location"><i style="margin-right: 6px;" class="fas fa-map-marker-alt"></i>San Fransisco, CA
+            </div>
+            <div class="icon_info">
+              <div class="user_plus">
+                <i class="fas fa-user-plus"></i>
+              </div>
+              <div class="like">
+                <i class="far fa-heart"></i>
+              </div>
+              <div class="lock">
+                <i class="fas fa-ban"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sd">
+            <div class="user_information">
+              <div class="user_title">
+                <p>User Information</p>
+                <i class="fas fa-exclamation-circle"></i>
+              </div>
+              <div class="phone_number">
+                <div class="phone">Phone</div>
+                <div class="number">+01-222-364522</div>
+              </div>
+              <div class="email_part">
+                <div class="email_info">Email</div>
+                <div class="info_email">catherine.richardson@gmail.com</div>
+              </div>
+              <div class="address_part">
+                <div class="address_info">Address</div>
+                <div class="info_address">1134 Ridder Park Road, San Fransisco, CA 94851</div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-bottom: 15px;" class="sd">
+            <div class="last_media">
+              <div class="media_title">
+                <p>Last Media</p>
+                <i class="fas fa-image"></i>
+              </div>
+              <div class="media_img">
+                <div class="img_1">
+                  <img src="img/01.jpg">
+                </div>
+                <div class="img_2">
+                  <img src="img/02.jpg">
+                </div>
+                <div class="img_3">
+                  <img src="img/03.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INFO SECTION END -->
+
+    </main>
+
+    <!-- MAIN END -->
+
+    <!-- MAIN START 2 -->
+
+    <main class="main_2 main_js">
+      <div class="container_main_2">
+        <div class="header_part">
+          <div class="hed_ellipsis">
+            <div class="dropdown">
+              <div class="all_drop all_chats">Clear Call Log</div>
+              <div class="all_drop friends">Block</div>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="main_profile_image">
+            <img src="img/2.png">
+          </div>
+          <div class="main_name">Catherine Richardson</div>
+          <div class="main_number">+01-202-265462</div>
+        </div>
+        <div class="content_part">
+          <div class="call_log_container">
+            <div class="call_log call_log_1">
+              <div class="call_btn">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="call_body">
+                <h6 class="top_part">Incoming Call</h6>
+                <div class="bottom_part">
+                  <span>Just now</span>
+                  <span style="margin: 0 12px;">•</span>
+                  <span>2m 35s</span>
+                </div>
+              </div>
+              <div class="call_icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+            </div>
+            <div class="call_log call_log_2">
+              <div class="call_btn">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="call_body">
+                <h6 class="top_part">Outgoing Call</h6>
+                <div class="bottom_part">
+                  <span>5 mins ago</span>
+                  <span style="margin: 0 12px;">•</span>
+                  <span>12m 25s</span>
+                </div>
+              </div>
+              <div class="call_icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+            </div>
+            <div class="call_log call_log_3">
+              <div class="call_btn">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="call_body">
+                <h6 style="color: #FF337C;" class="top_part">Missed Call</h6>
+                <div class="bottom_part">
+                  <span>18 mins ago</span>
+                </div>
+              </div>
+              <div class="call_icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+            </div>
+            <div class="call_log call_log_4">
+              <div class="call_btn">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="call_body">
+                <h6 class="top_part">Outgoing Call</h6>
+                <div class="bottom_part">
+                  <span>Yesterday at 10:45PM</span>
+                  <span style="margin: 0 12px;">•</span>
+                  <span>25m 18s</span>
+                </div>
+              </div>
+              <div class="call_icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+            </div>
+            <div class="call_log call_log_5">
+              <div class="call_btn">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="call_body">
+                <h6 class="top_part">Incoming Call</h6>
+                <div class="bottom_part">
+                  <span>16/05/2020 at 11:49AM</span>
+                  <span style="margin: 0 12px;">•</span>
+                  <span>0m 56s</span>
+                </div>
+              </div>
+              <div class="call_icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+            </div>
+            <div class="call_log call_log_6">
+              <div class="call_btn">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="call_body">
+                <h6 class="top_part">Incoming Call</h6>
+                <div class="bottom_part">
+                  <span>14/05/2020 at 11:49AM</span>
+                  <span style="margin: 0 12px;">•</span>
+                  <span>24m 19s</span>
+                </div>
+              </div>
+              <div class="call_icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MAIN END 2 -->
+
+    <!-- MAIN START 3 -->
+
+    <main class="main_3 main_2 main_js">
+      <div class="container_main_2">
+        <div class="header_part">
+          <div class="hed_ellipsis_2 hed_ellipsis">
+            <div class="dropdown">
+              <div class="all_drop all_chats">Remove</div>
+              <div class="all_drop friends">Block</div>
+            </div>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="main_profile_image">
+            <img src="img/3.png">
+          </div>
+          <div class="main_name">Catherine Richardson</div>
+          <div class="main_buttons">
+            <div class="btn_1">
+              <i class="fa-regular fa-comment-dots"></i>
+            </div>
+            <div class="btn_2">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+          </div>
+        </div>
+        <div class="content_part">
+          <div class="friends_log_container call_log_container">
+            <div class="friends_log call_log_1">
+              <div class="txt_part">
+                <div class="txt_top">Local Time</div>
+                <div class="txt_bottom">10:25 PM</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_2">
+              <div class="txt_part">
+                <div class="txt_top">Birthdate</div>
+                <div class="txt_bottom">20/11/1992</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-regular fa-calendar"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_3">
+              <div class="txt_part">
+                <div class="txt_top">Phone</div>
+                <div class="txt_bottom">+01-222-364522</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_4">
+              <div class="txt_part">
+                <div class="txt_top">Email</div>
+                <div class="txt_bottom">catherine.richardson@gmail.com</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_5">
+              <div class="txt_part">
+                <div class="txt_top">Website</div>
+                <div class="txt_bottom">>www.catherichardson.com</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+            </div>
+            <div style="border: none;" class="friends_log call_log_6">
+              <div class="txt_part">
+                <div class="txt_top">Address</div>
+                <div class="txt_bottom">1134 Ridder Park Road, San Fransisco, CA 94851</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-solid fa-house-chimney"></i>
+              </div>
+            </div>
+          </div>
+          <div class="soc_log_container call_log_container">
+            <div class="friends_log call_log_1">
+              <div class="txt_part">
+                <div class="txt_top">Facebook</div>
+                <div class="soc_href txt_bottom">@cathe.richardson</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_2">
+              <div class="txt_part">
+                <div class="txt_top">Twitter</div>
+                <div class="soc_href txt_bottom">@cathe.richardson</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+            <div class="friends_log call_log_3">
+              <div class="txt_part">
+                <div class="txt_top">Instagram</div>
+                <div class="soc_href txt_bottom">@cathe.richardson</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <div style="border-bottom: none;" class="friends_log call_log_4">
+              <div class="txt_part">
+                <div class="txt_top">Linkedin</div>
+                <div class="soc_href txt_bottom">@cathe.richardson</div>
+              </div>
+              <div class="icn_part">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+
+    <!-- MAIN END 3 -->
+
+    <!-- MAIN START 4 -->
+
+    <main class="main_4 main_3 main_2 main_js">
+      <div class="settings_block">
+        <div class="title">Settings</div>
+        <div class="title_text">Update Personal Information & Settings</div>
+      </div>
+      <div class="main_container_4">
+        <div class="account_part">
+          <div class="account_title_part">
+            <div class="account_title">Account</div>
+            <div class="account_text">Update personal & contact information</div>
+          </div>
+          <div class="account_content">
+            <div class="reserve_content">
+              <div class="general_block name_block">
+                <p>First Name</p>
+                <input placeholder="Type your first name" value="Catherine" type="text"
+                  class="general_input name_input">
+              </div>
+              <div class="general_block lastname_block">
+                <p>Last Name</p>
+                <input placeholder="Type your last name" value="Richardson" type="text"
+                  class="general_input lastname_input">
+              </div>
+              <div class="general_block mobile_block">
+                <p>Mobile number</p>
+                <input placeholder="Type your mobile number" value="+01-222-364522" type="text"
+                  class="general_input mobile_input">
+              </div>
+              <div class="general_block birth_block">
+                <p>Birth date</p>
+                <input placeholder="Type your birth date" value="20/11/1992" type="text"
+                  class="general_input birth_input">
+              </div>
+              <div class="general_block email_block">
+                <p>Email address</p>
+                <input placeholder="Type your email address" value="catherine.richardson@gmail.com" type="text"
+                  class="general_input email_input">
+              </div>
+              <div class="general_block website_block">
+                <p>Website</p>
+                <input placeholder="Type your website" value="www.catherichardson.com" type="text"
+                  class="general_input website_input">
+              </div>
+              <div class="address_block">
+                <p>Address</p>
+                <input placeholder="Type your address" value="1134 Ridder Park Road, San Fransisco, CA 94851"
+                  type="text" class="general_input address_input">
+              </div>
+            </div>
+          </div>
+          <div class="account_footer_part">
+            <div class="account_reset">Reset</div>
+            <div class="account_save">Save Changes</div>
+          </div>
+        </div>
+        <div class="account_part">
+          <div class="account_title_part">
+            <div class="account_title">Social network profiles</div>
+            <div class="account_text">Update personal & contact information</div>
+          </div>
+          <div class="account_content">
+            <div class="reserve_content">
+              <div class="general_block name_block">
+                <p>Facebook</p>
+                <input placeholder="Type your username" type="text" class="social_input general_input name_input">
+              </div>
+              <div class="general_block lastname_block">
+                <p>Twitter</p>
+                <input placeholder="Type your username" type="text" class="social_input general_input lastname_input">
+              </div>
+              <div class="general_block mobile_block">
+                <p>Instagram</p>
+                <input placeholder="Type your username" type="text" class="social_input general_input mobile_input">
+              </div>
+              <div class="general_block birth_block">
+                <p>Linkedin</p>
+                <input placeholder="Type your username" type="text" class="social_input general_input birth_input">
+              </div>
+            </div>
+          </div>
+          <div class="account_footer_part">
+            <div class="account_reset">Reset</div>
+            <div class="account_save">Save Changes</div>
+          </div>
+        </div>
+        <div class="account_part">
+          <div class="account_title_part">
+            <div class="account_title">Password</div>
+            <div class="account_text">Update personal & contact information</div>
+          </div>
+          <div class="account_content">
+            <div class="reserve_cont">
+              <div class="reserve_general_block">
+                <div class="general_block name_block">
+                  <p>Current Password</p>
+                  <input placeholder="Type your current password" type="password"
+                    class="social_input general_input name_input">
+                </div>
+              </div>
+              <div class="reserve_general_block_2">
+                <div class="general_block lastname_block">
+                  <p>New Password</p>
+                  <input placeholder="Type your new password" type="password"
+                    class="social_input general_input lastname_input">
+                </div>
+                <div class="general_block mobile_block">
+                  <p>Repeat Password</p>
+                  <input placeholder="Type your repeat password" type="password"
+                    class="social_input general_input mobile_input">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account_footer_part">
+            <div class="account_reset">Reset</div>
+            <div class="account_save">Save Changes</div>
+          </div>
+        </div>
+        <div class="account_part">
+          <div class="account_title_part">
+            <div class="account_title">Privancy</div>
+            <div class="account_text">Update personal & contact information</div>
+          </div>
+          <div style="padding: 0;" class="account_content">
+            <div class="reserve_cont">
+              <div class="list_item">
+                <div class="text">
+                  <div class="title">Profile Picture</div>
+                  <div class="small_text">Select who can see my profile picture</div>
+                </div>
+                <div class="btn">Public <span>▼</span></div>
+                <div class="public_dropdown dropdown">
+                  <div class="all_drop">Public</div>
+                  <div class="all_drop">Friends</div>
+                  <div class="all_drop">Selected Friends</div>
+                </div>
+              </div>
+              <div class="list_item">
+                <div class="text">
+                  <div class="title">Last Seen</div>
+                  <div class="small_text">Select who can see my last seen</div>
+                </div>
+                <div class="btn">Public <span>▼</span></div>
+                <div class="public_dropdown dropdown">
+                  <div class="all_drop">Public</div>
+                  <div class="all_drop">Friends</div>
+                  <div class="all_drop">Selected Friends</div>
+                </div>
+              </div>
+              <div class="list_item">
+                <div class="text">
+                  <div class="title">Groups</div>
+                  <div class="small_text">Select who can add you in groups</div>
+                </div>
+                <div class="btn">Public <span>▼</span></div>
+                <div class="public_dropdown dropdown">
+                  <div class="all_drop">Public</div>
+                  <div class="all_drop">Friends</div>
+                  <div class="all_drop">Selected Friends</div>
+                </div>
+              </div>
+              <div class="list_item">
+                <div class="text">
+                  <div class="title">Status</div>
+                  <div class="small_text">Select who can see my status updates</div>
+                </div>
+                <div class="btn">Public <span>▼</span></div>
+                <div class="public_dropdown dropdown">
+                  <div class="all_drop">Public</div>
+                  <div class="all_drop">Friends</div>
+                  <div class="all_drop">Selected Friends</div>
+                </div>
+              </div>
+              <div class="list_item">
+                <div class="text">
+                  <div class="title">Read receipts</div>
+                  <div class="small_text">If turn off this option you won't be able to see read recipts</div>
+                </div>
+                <div class="label_block">
+                  <div class="label_elem">
+                    <div style="position: relative; left: 0;" class="label_ball"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account_footer_part">
+            <div class="account_reset">Reset</div>
+            <div class="account_save">Save Changes</div>
+          </div>
+        </div>
+        <div class="account_part">
+          <div class="account_title_part">
+            <div class="account_title">Security</div>
+            <div class="account_text">Update personal & contact information</div>
+          </div>
+          <div style="padding: 0;" class="account_content">
+            <div class="reserve_cont">
+              <div class="list_item">
+                <div class="text">
+                  <div class="title">Use two-factor authentication</div>
+                  <div class="small_text">Ask for a code if attempted login from an unrecognised device or browser.
+                  </div>
+                </div>
+                <div class="label_block">
+                  <div class="label_elem">
+                    <div style="position: relative; left: 0;" class="label_ball"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="list_item">
+                <div class="text">
+                  <div class="title">Get alerts about unrecognised logins</div>
+                  <div class="small_text">You will be notified if anyone logs in from a device or browser you don't
+                    usually use</div>
+                </div>
+                <div class="label_block">
+                  <div class="label_elem">
+                    <div style="position: relative; left: 0;" class="label_ball"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="account_footer_part">
+            <div class="account_reset">Reset</div>
+            <div class="account_save">Save Changes</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MAIN END 4 -->
+
+    <!-- FOOTER START -->
+
+    <section aria-labelledby="trans_tab" id="trans_btn" class="all_modal asd translate_modal">
+      <div class="translate_container">
+        <div class="translate_header">
+          <p>Translator</p>
+          <div class="dz translate_close info_close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="language_block">
+          <div class="general_language from_language">English</div>
+          <div class="dropdown">
+            <div class="all_drop all_chats">English</div>
+            <div class="all_drop friends">Hindi</div>
+            <div class="all_drop groups">Irish</div>
+            <div class="all_drop unread">Latin</div>
+            <div class="all_drop archived">Russian</div>
+          </div>
+          <div class="lang_arrow">➜</div>
+          <div class="general_language to_language">Latin</div>
+          <div class="dropdown dropdown-two">
+            <div class="all_drop all_chats">English</div>
+            <div class="all_drop friends">Hindi</div>
+            <div class="all_drop groups">Irish</div>
+            <div class="all_drop unread">Latin</div>
+            <div class="all_drop archived">Russian</div>
+          </div>
+        </div>
+        <div class="language_content">
+          <textarea class="lang_area" rows="6"
+            placeholder="Write text here">Rise and shine, buddy! It’s time to show this world who you are. I hope your morning is filled with peace and harmony, and you are ready to start your day. Hope that you’re starting it with a smile!</textarea>
+          <div class="to_translate">
+            Et surge inluminare buddy! Aliquam quis es ut ostenderet hoc mundo. Utinam impleatur concordiam mane et dies
+            incipere velis. Spes autem quae erant incipiens cum risu!
+          </div>
+        </div>
+        <div class="button_translate">
+          <div class="translate_button">Translate</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="new_note_modal">
+      <div class="note_reserve">
+        <div class="new_note_container">
+          <div class="title">
+            <div class="name">Add new note</div>
+            <div class="new_note_close close">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="ds">
+            <div class="note_main">
+              <div class="note_input_title">
+                <div class="title_note">Note title:</div>
+                <input class="note_input" placeholder="Add note title here" type="text">
+              </div>
+              <div class="note_textarea_title">
+                <div class="title_note">Note details:</div>
+                <textarea class="textarea_details" placeholder="Add note descriptions" rows="4"></textarea>
+              </div>
+              <div class="note_tag">
+                <div class="title_note">Note tag:</div>
+                <select class="select_note">
+                  <option selected>Personal</option>
+                  <option value="1">Important</option>
+                  <option value="2">Work</option>
+                  <option value="3">Favourite</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="footer_note">
+            <div class="close_note">Close</div>
+            <div class="add_task">Add task</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="all_modal asd notes_modal translate_modal">
+      <div class="notes_container translate_container">
+        <div class="notes_header translate_header">
+          <p>Notes</p>
+          <div class="dz notes_close translate_close info_close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="note_all">
+          <div class="filter_search language_block">
+            <div class="all_notes">All Notes</div>
+            <div class="dropdown">
+              <div class="all_drop all_chats">All Notes</div>
+              <div class="all_drop friends">Personal</div>
+              <div class="all_drop groups">Work</div>
+              <div class="all_drop unread">Favourite</div>
+              <div class="all_drop archived">Important</div>
+            </div>
+            <div class="part_search">
+              <input placeholder="Search notes" class="notes_search" type="search">
+              <div class="search">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <div class="notes_content">
+            <div class="note">
+              <div class="notes_body">
+                <div class="note_data">Sunday, 20/12/2020 at 12:26 PM</div>
+                <div class="note_title">Metting with John Doe</div>
+                <div class="note_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum odio vitae
+                  sapiente eius obcaecati.</div>
+              </div>
+              <div class="notes_footer">
+                <div class="badge">Personal</div>
+                <div class="footer_ellips ellips">
+                  <i class="fas fa-ellipsis-v"></i>
+                  <div class="person_dropdown dropdown">
+                    <div class="all_drop">Personal</div>
+                    <div class="all_drop">Work</div>
+                    <div class="all_drop">Favourite</div>
+                    <div class="all_drop">Important</div>
+                    <div class="dropdown_line"></div>
+                    <div class="all_drop deleteDrop">Delete</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="note">
+              <div class="notes_body">
+                <div class="note_data">Sunday, 20/12/2020 at 12:26 PM</div>
+                <div class="note_title">Metting with John Doe</div>
+                <div class="note_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum odio vitae
+                  sapiente eius obcaecati.</div>
+              </div>
+              <div class="notes_footer">
+                <div style="background-color: #FF337C;" class="badge">Important</div>
+                <div class="footer_ellips ellips">
+                  <i class="fas fa-ellipsis-v"></i>
+                  <div class="person_dropdown dropdown">
+                    <div class="all_drop">Personal</div>
+                    <div class="all_drop">Work</div>
+                    <div class="all_drop">Favourite</div>
+                    <div class="all_drop">Important</div>
+                    <div class="dropdown_line"></div>
+                    <div class="all_drop deleteDrop">Delete</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="note">
+              <div class="notes_body">
+                <div class="note_data">Sunday, 20/12/2020 at 12:26 PM</div>
+                <div class="note_title">Metting with John Doe</div>
+                <div class="note_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum odio vitae
+                  sapiente eius obcaecati.</div>
+              </div>
+              <div class="notes_footer">
+                <div style="background-color: #665DFE;" class="badge">Favourite</div>
+                <div class="footer_ellips ellips">
+                  <i class="fas fa-ellipsis-v"></i>
+                  <div class="person_dropdown dropdown">
+                    <div class="all_drop">Personal</div>
+                    <div class="all_drop">Work</div>
+                    <div class="all_drop">Favourite</div>
+                    <div class="all_drop">Important</div>
+                    <div class="dropdown_line"></div>
+                    <div class="all_drop deleteDrop">Delete</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="note">
+              <div class="notes_body">
+                <div class="note_data">Sunday, 20/12/2020 at 12:26 PM</div>
+                <div class="note_title">Metting with John Doe</div>
+                <div class="note_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorum odio vitae
+                  sapiente eius obcaecati.</div>
+              </div>
+              <div class="notes_footer">
+                <div style="background-color: #FFB74D; color: black;" class="badge">Work</div>
+                <div class="footer_ellips ellips">
+                  <i class="fas fa-ellipsis-v"></i>
+                  <div class="person_dropdown dropdown">
+                    <div class="all_drop">Personal</div>
+                    <div class="all_drop">Work</div>
+                    <div class="all_drop">Favourite</div>
+                    <div class="all_drop">Important</div>
+                    <div class="dropdown_line"></div>
+                    <div class="all_drop deleteDrop">Delete</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button_notes button_translate">
+          <div class="note_btn notes_button translate_button">Add new note</div>
+        </div>
+      </div>
+    </section>
+    <div class="new_task_modal new_note_modal">
+      <div class="note_reserve">
+        <div class="new_note_container">
+          <div class="title">
+            <div class="name">Add new task</div>
+            <div class="new_task_close new_note_close close">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="ds">
+            <div class="note_main">
+              <div class="note_input_title">
+                <div class="title_note">Task name:</div>
+                <input class="note_input" placeholder="Add task name here" type="text">
+              </div>
+              <div class="note_textarea_title">
+                <div class="title_note">Task details:</div>
+                <textarea class="textarea_details" placeholder="Add task descriptions" rows="4"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="footer_note">
+            <div class="close_task close_note">Close</div>
+            <div class="add_task">Add task</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="edit_task_modal new_task_modal new_note_modal">
+      <div class="note_reserve">
+        <div class="new_note_container">
+          <div class="title">
+            <div class="name">Edit task</div>
+            <div class="edit_task_close new_task_close new_note_close close">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="ds">
+            <div class="note_main">
+              <div class="note_input_title">
+                <div class="title_note">Task name:</div>
+                <input class="note_input" placeholder="Add task name here" type="text">
+              </div>
+              <div class="note_textarea_title">
+                <div class="title_note">Task details:</div>
+                <textarea style="color: #6C6C6C; text-align: left; resize: none;" class="textarea_details"
+                  placeholder="Add task descriptions"
+                  rows="4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis temporibus vel, molestiae nobis dolor aut sapiente. Vero possimus molestias consequatur quod, quo rem autem molestiae, accusantium nemo culpa eos doloremque?</textarea>
+              </div>
+            </div>
+          </div>
+          <div class="footer_note">
+            <div class="close_edit close_task close_note">Close</div>
+            <div class="finish_task">Finish</div>
+            <div class="add_task">Save</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="all_modal asd clipboard_modal notes_modal translate_modal">
+      <div class="clipboard_container notes_container translate_container">
+        <div class="notes_header translate_header">
+          <p>To-do List</p>
+          <div class="dz clipboard_close notes_close translate_close info_close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="note_all">
+          <div class="filter_search language_block clipboard_block">
+            <div class="all_notes">All Tasks</div>
+            <div class="dropdown">
+              <div class="all_drop">All Tasks</div>
+              <div class="all_drop">Active</div>
+              <div class="all_drop">Finished</div>
+            </div>
+            <div class="part_search">
+              <input placeholder="Search notes" class="notes_search" type="search">
+              <div class="search">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+          <div class="todo_container">
+            <div class="todo_data">20/07/2020</div>
+            <div class="todo_remaining">6 Task remaining</div>
+            <div class="todo_list">
+              <div class="checkbox_todo">
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Dinner with friends</div>
+                </div>
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Watching movie at 10:30PM</div>
+                </div>
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Watching a football match</div>
+                </div>
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Coffie with girlfriend</div>
+                </div>
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Meeting with design team</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="todo_container">
+            <div class="todo_data">21/07/2020</div>
+            <div class="todo_remaining">6 Task remaining</div>
+            <div class="todo_list">
+              <div class="checkbox_todo">
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Dinner with friends</div>
+                </div>
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Watching movie at 10:30PM</div>
+                </div>
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Watching a football match</div>
+                </div>
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Coffie with girlfriend</div>
+                </div>
+                <div class="rese">
+                  <div class="todo_checkbox"></div>
+                  <div class="checkbox_text">Meeting with design team</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button_notes button_translate">
+          <div class="task_btn notes_button translate_button">Add new task</div>
+        </div>
+      </div>
+    </section>
+    <section class="all_modal asd params_modal notes_modal translate_modal">
+      <div class="params_container notes_container translate_container">
+        <div class="notes_header translate_header">
+          <p>Settings</p>
+          <div class="dz params_close clipboard_close notes_close translate_close info_close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="params_all note_all">
+          <div class="params_content">
+            <div class="label_block label_block_1">
+              <div class="label_text">Last seen</div>
+              <div class="label_elem">
+                <div style="position: relative; left: 0;" class="label_ball"></div>
+              </div>
+            </div>
+            <div class="label_block label_block_2">
+              <div class="label_text">Read receipts</div>
+              <div class="label_elem">
+                <div style="position: relative; left: 0;" class="label_ball"></div>
+              </div>
+            </div>
+            <div class="label_block label_block_3">
+              <div class="label_text">Media auto download</div>
+              <div class="label_elem">
+                <div style="position: relative; left: 0;" class="label_ball"></div>
+              </div>
+            </div>
+            <div class="label_block label_block_4">
+              <div class="label_text">Notifications</div>
+              <div class="label_elem">
+                <div style="position: relative; left: 0;" class="label_ball"></div>
+              </div>
+            </div>
+            <div class="label_block label_block_5">
+              <div class="label_text">Auto backup</div>
+              <div class="label_elem">
+                <div style="position: relative; left: 0;" style="position: relative; left: 0;" class="label_ball"></div>
+              </div>
+            </div>
+            <div style="border-bottom: none;" class="label_block label_block_6">
+              <div class="label_text">Screen lock</div>
+              <div class="label_elem">
+                <div style="position: relative; left: 0;" class="label_ball"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button_notes button_translate">
+          <div class="settings_button notes_button translate_button">Save settings</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="apps">
+        <i class="fas fa-compress"></i>
+        <p>Apps</p>
+      </div>
+      <div class="additional">
+        <i class="footer_nav fas fa-language"></i>
+        <i class="footer_nav far fa-sticky-note"></i>
+        <i class="footer_nav fas fa-clipboard-check"></i>
+        <i class="footer_nav fas fa-cog"></i>
+      </div>
+    </footer>
+
+    <!-- FOOTER END -->
+
+  </section>
+  <script src="../Sign in/script sign in.js"></script>
+  <script src="home.js"></script>
+</body>
+
+</html>

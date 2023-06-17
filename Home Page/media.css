@@ -1,0 +1,394 @@
+/* HEADER START */
+
+@media (max-width: 1300px) {
+    .main_1 .info_section {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1905;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main_1 .info_section {
+        width: 100%;
+        position: absolute;
+    }
+
+    .all .chats .people_block .contact_block {
+        background: none;
+    }
+
+    .info_section .res {
+        height: 100%;
+    }
+
+    .last_media {
+        height: auto;
+        margin-bottom: 23px;
+        overflow: hidden;
+    }
+
+    .info_section .last_media .media_img {
+        justify-content: flex-start;
+    }
+
+    .last_media .media_img .img_all img {
+        margin: 5px;
+        max-width: 175px;
+        height: 175px;
+    }
+}
+
+/* HEADER END */
+
+/* MAIN START */
+
+@media (max-width: 1200px) {
+    .all {
+        flex-direction: column-reverse;
+    }
+
+    header {
+        height: 63px;
+        padding: 12px 28px;
+        position: relative;
+        z-index: 999;
+    }
+
+    header .navigator {
+        height: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    header .navigator i {
+        width: auto;
+        margin: 0;
+    }
+
+    header .logo_block {
+        display: none;
+    }
+
+    .hw-20 {
+        display: flex;
+        width: 21px;
+        height: 30px;
+        margin: 0 3px;
+        color: #ADB5BD;
+        cursor: pointer;
+    }
+
+    .all .chats {
+        max-width: 100%;
+        min-width: 100%;
+        z-index: 998;
+    }
+
+    .chats_2 {
+        position: absolute;
+        top: 0;
+    }
+
+    .all .chats_3 .people_block {
+        padding-bottom: 70px;
+    }
+
+    .all .chats_2 .people_block {
+        padding-bottom: 180px;
+    }
+
+    .all .chats .people_block_4 {
+        padding-bottom: 50px;
+    }
+
+    .all .chats .people_block .name_block .sms_block .sms,
+    .all .chats .people_block .name_block .name_box .data {
+        color: #ADB5BD;
+    }
+
+    .all .chats .people_block .contact_block .name_block {
+        width: 70%;
+        flex: 1 1 auto;
+    }
+
+    .all .chats .people_block .contact_block .name_block .sms_block .sms {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .footer_section {
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10000;
+    }
+
+    .footer_section_active {
+        display: flex;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .footer_active {
+        display: block;
+        border-right: 1px solid #2b2b2f;
+    }
+
+    .footer_media {
+        width: 100%;
+        height: 100%;
+        background-color: #323333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 960px;
+        margin: 0 27px;
+        padding: 0 15px;
+    }
+
+    .footer_cont img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 0%;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer_cont .footer_text_1 {
+        font-size: 1.09375rem;
+        margin-bottom: 12px;
+        color: white;
+        font-family: 'Inter_Regular';
+    }
+
+    .footer_cont .footer_text_2 {
+        font-size: 875rem;
+        margin-bottom: 16px;
+        color: #ADB5BD;
+        font-family: 'Inter_Regular';
+    }
+
+    footer .fa-arrow-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 8px;
+        font-size: 18px;
+        color: #ADB5BD;
+        border-bottom: 1px solid #2b2b2f;
+        transition: .13s;
+    }
+
+    footer .fa-arrow-left:hover {
+        cursor: pointer;
+        color: #727272;
+    }
+
+    .main_info .main_arrow {
+        display: flex;
+    }
+
+    .translate_modal_active {
+        background: none;
+        z-index: 1100;
+        display: flex;
+    }
+
+    .notification_modal .modal_content,
+    .settings_modal .settings_modal_content,
+    .invites_modal .invites_modal_content {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .header_active {
+        display: none;
+    }
+
+    .notification_modal .modal_content .notific_section,
+    .new_chat_section,
+    .invites_modal .invites_modal_content .emailAndMessege_part {
+        border-bottom: none;
+        flex: 1 1 auto;
+        overflow-y: auto;
+    }
+
+    .settings_modal .settings_modal_content .new_chat_section .search_part {
+        height: 70px;
+    }
+
+    .settings_modal .settings_modal_content .new_chat_section .search_part .new_chat_search {
+        height: 100%;
+    }
+
+    .notification_modal .modal_content .notific_section::-webkit-scrollbar,
+    .new_chat_section::-webkit-scrollbar,
+    .invites_modal .invites_modal_content .emailAndMessege_part::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .settings_modal .settings_modal_content .new_chat_section .text_block {
+        position: relative;
+    }
+
+    .notification_modal .modal_content .clear_part {
+        border-top: 1px solid #2b2b2f;
+    }
+
+    .notification_modal .modal_content .clear_part,
+    .invites_modal .invites_modal_content .close_send {
+        height: 70px;
+        border-top: 1px solid #2b2b2f;
+        background-color: #3b4348;
+        position: relative;
+        bottom: 0;
+    }
+
+    .welcome_main {
+        display: none;
+    }
+
+    .main_2_active,
+    .main_3_acvive {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 18000;
+        padding: 1rem 0;
+    }
+
+    .main_1 {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .main_1_media {
+        z-index: 100000;
+    }
+
+    .main_active,
+    .main_1_active {
+        height: 100%;
+        z-index: 10800;
+    }
+
+    .main_4 .main_container_4 {
+        margin: 0;
+    }
+
+    .main_4 .settings_block .fa-arrow-left {
+        width: calc(1.5rem + 2px);
+        margin-right: 10px;
+        line-height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: #ADB5BD;
+        font-size: 18px;
+        transition: .15s;
+    }
+
+    .main_4 .settings_block {
+        display: flex;
+    }
+
+    .main_2 .fa-arrow-left,
+    .main_3 .fa-arrow-left {
+        width: calc(1.5rem + 2px);
+        line-height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: #ADB5BD;
+        font-size: 18px;
+        top: 15px;
+        left: 15px;
+        transition: .15s;
+    }
+
+    .main_2 .fa-arrow-left:hover,
+    .main_3 .fa-arrow-left:hover,
+    .main_4 .fa-arrow-left:hover {
+        color: #666a6e;
+        cursor: pointer;
+    }
+
+    .user_btn {
+        display: flex;
+    }
+
+    .people_block_4 .user_profile .user_logout {
+        margin: 0 6px;
+    }
+
+    .people_block_4 .user_settings {
+        background-color: #2A2A6A;
+        font-family: 'Inter_Regular';
+        border: 1px solid #2b2b2f;
+        display: flex;
+        align-items: center;
+        border-radius: 4.25rem;
+        font-size: 14px;
+        padding: 7px 20px;
+        margin: 0 6px;
+        line-height: 1.5;
+        transition: .15s;
+    }
+
+    .people_block_4 .user_settings:hover {
+        background-color: #495357;
+        cursor: pointer;
+    }
+
+    .name_block .sms_block .active_contact_text {
+        color: #9da7b1f5;
+    }
+}
+
+@media (max-width: 399px) {
+    .all .chats .settings_block .part_bottom .chat_search, .notes_search {
+        width: auto;
+    }
+    .all .chats .settings_block .part_bottom .button, .all_notes {
+        max-width: 105px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+    }
+    .all .chats .settings_block .part_bottom .button::after, .all_notes::after {
+        margin-top: 2px;
+    }
+    .main_info .profile_image, .image_profile {
+        display: none;
+    }
+    main .main_section .main_search_part .search_main {
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+/* MAIN END */
